@@ -1,56 +1,57 @@
 bvfs<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\e[96m_________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m______________\n";
-echo "\e[95m______________________________________________________________________\n";
-echo "\e[96m______________________________________________________________________\n";
+echo "\e[96m__________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m_______________\n";
+echo "\e[95m_______________________________________________________________\n";
+echo "\e[96m_______________________________________________________________\n";
 echo "\e[93m      \e[96m    CROOT DALAM LUAR PODO ENAKE \e[93m \n";
 echo "\e[93m              \e[96m   PEJJULELEHAN \e[93m \n";
-echo "\e[96m  ==============================================\n";
-echo "\e[96m  =\e[95m   1. VC EATLAH COK \e[96m=\n";
-echo "\e[96m  =\e[95m   2. VC 15 PRUT \e[96m=\n";
-echo "\e[96m  =\e[95m   3. VC 10 PRUT \e[96m=\n";
-echo "\e[96m  =\e[95m   4. VC GR GCR BIASANE \e[96m=\n";
-echo "\e[96m  =\e[95m   5. YO OJOK LALI ANGGUR MERAHE \e[96m=\n";
-echo "\e[96m  =\e[95m   6. YO OJOK LALI SINGSONG CAK \e[96m=\n";
-echo "\e[96m  ==============================================\n";
-echo "\e[96m______________________________________________________________________\n";
-echo "\e[95m Wes mari ijin juleha opo dorong (Y/N ?: ";	
+echo "\e[96m  \n";
+echo "\e[96m       =\e[95m   1. VC EATLAH COK \e[96m\n";
+echo "\e[96m       =\e[95m   2. VC 15 PRUT \e[96m\n";
+echo "\e[96m       =\e[95m   3. VC 10 PRUT \e[96m\n";
+echo "\e[96m       =\e[95m   4. VC GR GCR BIASANE\e[96m\n";
+echo "\e[96m       =\e[95m   5. YO OJOK LALI ANGGUR MERAHE\e[96m\n";
+echo "\e[96m       =\e[95m   6. YO OJOK LALI SINGSONG CAK\e[96m\n";
+echo "\e[96m       =\e[95m   7. POK AKU I LOVE YOU LAH HEHE\e[96m\n";
+echo "\e[96m  \n";
+echo "\e[96m_______________________________________________________________\n";
+echo "\e[95m Wes mari ijin juleha opo dorong (Y/N ?: ";
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "wes")
-echo "\e[96m_____lek wes mari ijin lnjut_______________________________\n";
+echo "\e[96m_________________lek wes mari ijin lnjut_______________________\n";
 	goto login;
 login:
-echo "\e[96m_____user ketik julehacantik_______________________________\n";
+echo "\e[96m_________________user ketik julehacantik_______________________\n";
 $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
 if($user == "julehacantik")
 {
-	echo "\e[96m______________________________________________________________________\n";
-	echo "\e[96m______________________________________________________________________\n";
+	echo "\e[96m_____________________________________________________________\n";
+	echo "\e[96m_____________________________________________________________\n";
 	echo "\e[95m Ketiken jenengmu cak ?: ";
 	$input = trim(fgets(STDIN));
-	echo "\e[96m______________________________________________________________________\n";
+	echo "\e[96m_____________________________________________________________\n";
 		goto ulang;
 }
 else
 {
-		echo "\e[96m______________________________________________________________________\n";	
-		echo "\e[91m______________________________________________________________________\n";
-		echo "\e[96m          \e[91mSALAH IMPUT USERNYA BOS      \e[96m \n";
-	        echo "\e[96m          \e[91mMASOK PAK EKO      \e[96m \n";
-		echo "\e[96m          \e[91mIJIN DULU YA SAMA JULEHA     \e[96m \n";
-	        echo "\e[96m          \e[91m@JULEHA CANTIK     \e[96m \n";
-		echo "\e[91m______________________________________________________________________\n";
+		echo "\e[96m__________________________________________________________\n";	
+		echo "\e[91m__________________________________________________________\n";
+		echo "\e[96m              \e[91mSALAH IMPUT USERNYA BOS      \e[96m \n";
+	        echo "\e[96m              \e[91mMASOK PAK EKO      \e[96m \n";
+		echo "\e[96m              \e[91mIJIN DULU YA SAMA JULEHA     \e[96m \n";
+	        echo "\e[96m              \e[91mteleram @PEJJULELEHAN     \e[96m \n";
+		echo "\e[91m__________________________________________________________\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
 echo "\e[96m            (YA WES LANJUTNO AE $input)               \n";
-echo "\e[89m______________________________________________________________________\n";
+echo "\e[89m______________________________________________________________\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -109,7 +110,7 @@ echo "\e[89m____________________________________________________________________
         echo "\n".color("red"," Message: ".$message);
 	      gocar:
         echo "\n".color("blue"," GOLEK VC PRUT A");
-        echo "\n".color("blue"," Sabar");
+        echo "\n".color("yellow"," Sabar");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -159,15 +160,15 @@ echo "\e[89m____________________________________________________________________
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
         echo "\n".color("blue"," Total vocerre ".$total." : ");
         echo "\n".color("blue","                     1. ".$voucher1);
-        echo "\n".color("pink","                     2. ".$voucher2);
+        echo "\n".color("blue","                     2. ".$voucher2);
         echo "\n".color("blue","                     3. ".$voucher3);
         echo "\n".color("blue","                     4. ".$voucher4);
         echo "\n".color("blue","                     5. ".$voucher5);
         echo "\n".color("blue","                     6. ".$voucher6);
         echo "\n".color("blue","                     7. ".$voucher7);
-        echo "\n".color("pink","                     8. ".$voucher8);
+        echo "\n".color("blue","                     8. ".$voucher8);
         echo "\n".color("blue","                     9. ".$voucher9);
-        echo "\n".color("pink","                     10. ".$voucher10);
+        echo "\n".color("blue","                     10. ".$voucher10);
       	echo "\n".color("blue","                     11. ".$voucher11);
         echo "\n".color("blue","                     12. ".$voucher12);
         echo "\n".color("blue","                     13. ".$voucher13);
