@@ -86,7 +86,7 @@ echo "\e[89m______________________________________________________________\n";
         otp:
         echo color("blue"," Otp : ");
         $otp = trim(fgets(STDIN));
-        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"f1b444eb-d897-42cb-a7d1-9aa4128d2268"}';
+        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"1ecd0e8b-6a64-40aa-9e53-fbc76e215324"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
         echo color("blue"," Berhasil daftare boos\n");
