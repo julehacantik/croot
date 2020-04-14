@@ -1,9 +1,9 @@
 bvfs<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\e[96m__________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m_______________\n";
-echo "\e[95m_______________________________________________________________\n";
-echo "\e[96m_______________________________________________________________\n";
+echo "\e[96m________________\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m____________\n";
+echo "\e[95m__________________________________________________________\n";
+echo "\e[96m__________________________________________________________\n";
 echo "\e[93m      \e[96m    CROOT DALAM LUAR PODO ENAKE \e[93m \n";
 echo "\e[93m              \e[96m   PEJJULELEHAN \e[93m \n";
 echo "\e[96m  \n";
@@ -15,43 +15,43 @@ echo "\e[96m       =\e[95m   5. YO OJOK LALI ANGGUR MERAHE\e[96m\n";
 echo "\e[96m       =\e[95m   6. YO OJOK LALI SINGSONG CAK\e[96m\n";
 echo "\e[96m       =\e[95m   7. POK AKU I LOVE YOU LAH HEHE\e[96m\n";
 echo "\e[96m  \n";
-echo "\e[96m_______________________________________________________________\n";
+echo "\e[96m__________________________________________________________\n";
 echo "\e[95m Wes mari ijin juleha opo dorong (Y/N ?: ";
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "wes")
-echo "\e[96m_________________lek wes mari ijin lnjut_______________________\n";
+echo "\e[96m_______________lek wes mari ijin lnjut____________________\n";
 	goto login;
 login:
-echo "\e[96m_________________user ketik julehacantik_______________________\n";
+echo "\e[96m_______________user ketik julehacantik____________________\n";
 $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
 if($user == "julehacantik")
 {
-	echo "\e[96m_____________________________________________________________\n";
-	echo "\e[96m_____________________________________________________________\n";
+	echo "\e[96m________________________________________________________\n";
+	echo "\e[96m________________________________________________________\n";
 	echo "\e[95m Ketiken jenengmu cak ?: ";
 	$input = trim(fgets(STDIN));
-	echo "\e[96m_____________________________________________________________\n";
+	echo "\e[96m________________________________________________________\n";
 		goto ulang;
 }
 else
 {
-		echo "\e[96m__________________________________________________________\n";	
-		echo "\e[91m__________________________________________________________\n";
+		echo "\e[96m_____________________________________________________\n";	
+		echo "\e[91m_____________________________________________________\n";
 		echo "\e[96m              \e[91mSALAH IMPUT USERNYA BOS      \e[96m \n";
 	        echo "\e[96m              \e[91mMASOK PAK EKO      \e[96m \n";
 		echo "\e[96m              \e[91mIJIN DULU YA SAMA JULEHA     \e[96m \n";
 	        echo "\e[96m              \e[91mteleram @PEJJULELEHAN     \e[96m \n";
-		echo "\e[91m__________________________________________________________\n";
+		echo "\e[91m_____________________________________________________\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
 echo "\e[96m            (YA WES LANJUTNO AE $input)               \n";
-echo "\e[89m______________________________________________________________\n";
+echo "\e[89m_________________________________________________________\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -94,7 +94,7 @@ echo "\e[89m______________________________________________________________\n";
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("blue","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("blue","\n________________ENTENONO DISEK OJOK KESUSU________________");
+        echo color("blue","\n______________ENTENONO DISEK OJOK KESUSU_____________");
         echo "\n".color("blue"," GOLEK VC EATLAH");
         echo "\n".color("yellow"," Sabar");
         for($a=1;$a<=3;$a++){
@@ -216,7 +216,7 @@ echo "\e[89m______________________________________________________________\n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("blue","_________________ PIN GOPAYMU IKU = 909090 __________________")."\n";
+         echo color("blue","_______________ PIN GOPAYMU IKU = 909090 _______________")."\n";
          $data2 = '{"pin":"909090"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
@@ -232,13 +232,13 @@ echo "\e[89m______________________________________________________________\n";
          }
          }else{
          echo color("red","-] OTP ne kliru cak coba di cek maneh");
-         echo"\n______________________________________________________________________\n\n";
+         echo"\n_________________________________________________________________\n\n";
          echo color("blue","!] Coba lebokno neh\n");
          goto otp;
          }
          }else{
          echo color("red","-] Nomore wes tau regist iki.");
-         echo"\n______________________________________________________________________\n\n";
+         echo"\n_________________________________________________________________\n\n";
          echo color("blue","!] Coba gae nomer liyone \n");
          goto ulang;
          }
