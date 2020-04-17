@@ -115,7 +115,7 @@ echo "\e[89m_________________________________________________________\n";
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420A"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("blue"," Message: ".$message);
@@ -129,7 +129,7 @@ echo "\e[89m_________________________________________________________\n";
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420B"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("blue"," Message: ".$message);
         echo "\n".color("blue"," GOLEK VC GR GCR BIASA");
@@ -139,7 +139,7 @@ echo "\e[89m_________________________________________________________\n";
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420A"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BIARKAMUSEHAT"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("blue"," Message: ".$messageboba09);
         sleep(3);
