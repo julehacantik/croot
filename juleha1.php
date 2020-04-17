@@ -58,7 +58,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(20);
         }
         sleep(3);
-        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420A"}');
+        $goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD160420B"}');
         $message2 = fetch_value($goride1,'"message":"','"');
         echo "\n".color("purple","+] Message: ".$message2);
         sleep(3);
