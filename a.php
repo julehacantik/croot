@@ -40,7 +40,7 @@ echo color("purple"," ஜ۩۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         otp:
         echo color("purple"," Otp : ");
         $otp = trim(fgets(STDIN));
-        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"9aec59aa-d75a-4736-8a0b-3da127f816bd"}';
+        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"8e70f58d-ec5a-4be0-ab3a-00074ae8411c"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
         echo color("blue"," Berhasil daftare boos\n");
