@@ -173,8 +173,8 @@ echo color("purple"," ஜ۩۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("purple","nஜ۩۩ஜ▬▬▬▬ஜ۩۩ஜ=IKI PIN GOPAY NE YO 777777=ஜ۩۩ஜ▬▬▬▬ஜ۩۩ஜ")."\n";
-         $data2 = '{"pin":"777777"}';
+         echo color("purple","nஜ۩۩ஜ▬▬▬▬ஜ۩۩ஜ=IKI PIN GOPAY NE YO 007007=ஜ۩۩ஜ▬▬▬▬ஜ۩۩ஜ")."\n";
+         $data2 = '{"pin":"007007"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
