@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
+echo color("blue"," ஜ۩۩ஜ▬▬KONTOL▬▬ஜ۩۩ஜ\n");
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -51,7 +51,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         echo color("purple",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("purple","Message: ".$message);
@@ -65,7 +65,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         echo color("purple",".");
         sleep(20);
         }
-        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("purple","Message: ".$message);
@@ -79,7 +79,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         echo color("purple",".");
         sleep(10);
         }
-        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("purple","Message: ".$message);
         echo "\n".color("purple","VC 4");
