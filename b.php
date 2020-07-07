@@ -25,7 +25,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
             $hp = '6'.substr(trim($nohp), 1);
         }
         else{
-            $hp = '1'.substr(trim($nohp),0,13);
+
         }
     }
         $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
@@ -36,9 +36,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         otp:
         echo color("purple","Otp : ");
         $otp = trim(fgets(STDIN));
-        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"b59e08b1-fa21-4b35-b0bc-1854be30bf45"}';
-        $verif = request("/v5/customers/phone/verify", null, $data1);
-        if(strpos($verif, '"access_token"')){
+        $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . pos($verif, '"access_token"')){
         echo color("purple","Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
@@ -53,7 +51,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){o
         echo "\n".color("purple","Message: ".$message);
         goto gocar;
         }else{
@@ -79,7 +77,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         echo color("purple",".");
         sleep(10);
         }
-        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $code1 = request2('/go-promotions/v1/COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("purple","Message: ".$message);
         echo "\n".color("purple","VC 4");
@@ -89,17 +87,17 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
         sleep(1);
         }
         sleep(5);
-        $boba09 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $boba09 = request1('/go-promotion:"COBAGOFOOD2206"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("purple","Message: ".$messageboba09);
         sleep(3);
-        $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
+        $cekvoucher = request('/gopoints/v3/wallet/vouchers?loken);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
         $voucher2 = getStr1('"title":"','",',$cekvoucher,"2");
         $voucher3 = getStr1('"title":"','",',$cekvoucher,"3");
         $voucher4 = getStr1('"title":"','",',$cekvoucher,"4");
-        $voucher5 = getStr1('"title":"','",',$cekvoucher,"5");
+     ,"5");
         $voucher6 = getStr1('"title":"','",',$cekvoucher,"6");
         $voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
         $voucher8 = getStr1('"title":"','",',$cekvoucher,"8");
@@ -168,10 +166,7 @@ echo color("blue"," ஜ۩۩ஜ▬▬TEMPEK▬▬ஜ۩۩ஜ\n");
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("purple","▬▬▬PIN = 007007")."\n";
          $data2 = '{"pin":"007007"}';
-         $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
-         $otpsetpin = trim(fgets(STDIN));
-         $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
+         $getotpsetpin = request("/2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
