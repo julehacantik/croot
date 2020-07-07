@@ -2,14 +2,7 @@
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
 $header[] = "Host: api.gojekapi.com";
 $header[] = "User-Agent: okhttp/3.10.0";
-$header[] = "Accept: application/json";
-$header[] = "Accept-Language: id-ID";
-$header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.46.1";
-$header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
-$header[] = "Connection: keep-alive";
-$header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -6.2062313,106.8411617";
+$header[] = "Accept: application/j
 if ($pin):
 $header[] = "pin: $pin";
     endif;
@@ -18,7 +11,7 @@ $header[] = "Authorization: Bearer $token";
 endif;
 if ($otpsetpin):
 $header[] = "otp: $otpsetpin";
-endif;
+endif
 if ($uuid):
 $header[] = "User-uuid: $uuid";
 endif;
@@ -42,7 +35,7 @@ $c = curl_init("https://api.gojekapi.com".$url);
         $body   = substr($response, curl_getinfo($c, CURLINFO_HEADER_SIZE));
     }
     $json = json_decode($body, true);
-    return $body;
+    return $body;ddgdj
 }
 
 function request1($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
@@ -51,11 +44,7 @@ $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.46.1";
-$header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
-$header[] = "Connection: keep-alive";
-$header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -8.6663938,115.2206691";
+$header[] = "X-AppVersion
 if ($pin):
 $header[] = "pin: $pin";
     endif;
@@ -92,16 +81,7 @@ $c = curl_init("https://api.gojekapi.com".$url);
 }
 
 function request2($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
-$header[] = "Host: api.gojekapi.com";
-$header[] = "User-Agent: okhttp/3.10.0";
-$header[] = "Accept: application/json";
-$header[] = "Accept-Language: id-ID";
-$header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.46.1";
-$header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
-$header[] = "Connection: keep-alive";
-$header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -6.9184122513008,107.61516737944";
+$header[] = "
 if ($pin):
 $header[] = "pin: $pin";
     endif;
@@ -148,14 +128,7 @@ function save($filename, $content)
 function nama()
     {
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://ninjaname.horseridersupply.com/indonesian_name.php");
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    $ex = curl_exec($ch);
-    // $rand = json_decode($rnd_get, true);
-    preg_match_all('~(&bull; (.*?)<br/>&bull; )~', $ex, $name);
+    curl_setopt($ch, CURLOPT_URL, "http://ninjaname.horseridersupply.com/i
     return $name[2][mt_rand(0, 14) ];
     }
 function getStr($a,$b,$c){
